@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Website</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 style="text-align: center;">Quiz Website</h1>
+	<div class="quiz-container">
+		<div class="question">
+			<p id="question-text">What is the capital of France?</p>
+			<ul id="options">
+				<li><input type="radio" name="answer" value="Paris"> Paris</li>
+				<li><input type="radio" name="answer" value="London"> London</li>
+				<li><input type="radio" name="answer" value="Berlin"> Berlin</li>
+				<li><input type="radio" name="answer" value="Rome"> Rome</li>
+			</ul>
+			<button id="submit-btn">Submit</button>
+		</div>
+		<div class="timer">
+			<p id="timer-text">Time: <span id="time">90</span> seconds</p>
+		</div>
+		<div class="score">
+			<p id="score-text">Score: <span id="score-value">0</span> / <span id="total-questions">5</span></p>
+		</div>
+		<div class="result">
+			<p id="result-text"></p>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
